@@ -19,13 +19,13 @@ This repository contains a Firefox extension that dynamically themes your browse
 
 ### Build and install
 1. Clone repo:
-```git clone https://github.com/vannrr/omarchy-firefox-theme.git```
+- ```git clone https://github.com/vannrr/omarchy-firefox-theme.git```
 
 2. Change directory
-```cd omarchy-firefox-theme```
+- ```cd omarchy-firefox-theme```
 
 3. Build and install the package with `makepkg`:
-```makepkg -si```
+- ```makepkg -si```
 
 ## Licenses and Attribution
 
