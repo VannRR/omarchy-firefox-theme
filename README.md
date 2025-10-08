@@ -9,7 +9,7 @@ This repository contains a Firefox extension that dynamically themes your browse
 - Uses Material 3 theme generation to produce themes that closely match Chromium’s dynamic theming.
 - Native watcher process detects file changes and triggers theme updates automatically.
 - Integrates with the [@material/material-color-utilities](https://www.npmjs.com/package/@material/material-color-utilities) package for color utilities and Material 3 palette generation.
-- Compatible with *Firefox*, *Floorp* and *Librewolf*
+- Compatible with **Firefox**, **Floorp** and **Librewolf**
 
 ## Installation
 
