@@ -1,0 +1,74 @@
+# Node / JS
+node_modules/
+npm-debug.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# Build outputs
+extension/dist/
+extension/build/
+native/build/
+*.map
+
+# Packaged artifacts
+*.xpi
+*.zip
+*.tar.gz
+*.tgz
+
+# PKGBUILD / makepkg
+pkg/
+pkg.tar*
+*.pkg.tar*
+src/
+src.tar.gz
+*.SRCINFO
+
+# makepkg temporary dirs (when building locally)
+pkgdir/
+srcdir/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Shell / environment
+.env
+.env.local
+.env.*.local
+
+# Logs and coverage
+*.log
+coverage/
+*.lcov
+
+# Temporary files, backups
+*~
+*.swp
+*.bak
+*.orig
+
+# Compiled binaries (if produced during develop/build)
+native/build/*
+bin/
+usr/lib/**/omarchy*             # optional, if you create local install trees for testing
+
+# Git metadata and secrets (safety)
+*.pem
+*.key
+*.crt
+secrets.json
+
+# Optional: keep dist artifacts out of repo but allow checked-in dist via explicit add
+# Uncomment to ignore dist unless explicitly added with -f
+# /extension/dist/**
+
+# Allowlist (if you want certain files in ignored dirs)
+!/extension/src

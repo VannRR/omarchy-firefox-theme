@@ -1,0 +1,7 @@
+{
+    "name": "io.vannrr.omarchy_firefox_theme",
+    "description": "Omarchy theme provider",
+    "path": "/usr/lib/omarchy-firefox-themehost",
+    "type": "stdio",
+    "allowed_extensions": ["io.vannrr.omarchy_firefox_theme@local"]
+}

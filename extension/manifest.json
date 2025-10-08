@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Omarchy Theme (community)",
+    "version": "1.0.0",
+    "description": "Dynamically themes Firefox to your current omarchy theme.",
+    "icons": {
+        "32": "icon-32.png",
+        "64": "icon-64.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "io.vannrr.omarchy_firefox_theme@local",
+            "data_collection_permissions": {
+                "required": ["none"]
+            }
+        }
+    },
+    "permissions": ["nativeMessaging", "theme", "storage"]
+}
