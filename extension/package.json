@@ -1,9 +1,14 @@
 {
     "name": "omarchy_firefox_theme",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "devDependencies": {
         "esbuild": "^0.25.10",
         "web-ext": "^8.10.0"
+    },
+    "scripts": {
+        "build:ts": "mkdir -p 'build' && npx esbuild src/background.js --bundle --outfile='build/background.js' --platform=browser --sourcemap",
+        "copy:static": "cp 'icon-32.png' 'icon-64.png' 'manifest.json' 'build'",
+        "build:dev": "npm run 'build:ts' && npm run copy:static"
     },
     "dependencies": {
         "@material/material-color-utilities": "^0.3.0"
