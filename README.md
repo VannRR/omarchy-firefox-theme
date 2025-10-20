@@ -5,7 +5,7 @@ A native helper watches `$HOME/.config/omarchy/current/theme/chromium.theme` and
 
 ## Features
 
-- Material 3 palette matching Chromium’s dynamic theming
+- Material 3 palette closely matching Chromium’s dynamic theming
 - Native watcher for instant theme updates
 - Uses [@material/material-color-utilities](https://www.npmjs.com/package/@material/material-color-utilities) for color generation
 - Compatible with Firefox, Floorp, Librewolf
