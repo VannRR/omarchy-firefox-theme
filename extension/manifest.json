@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Omarchy Theme (community)",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Dynamically themes Firefox to your current omarchy theme.",
     "icons": {
         "32": "icon-32.png",
@@ -18,5 +18,5 @@
             }
         }
     },
-    "permissions": ["nativeMessaging", "theme", "storage"]
+    "permissions": ["nativeMessaging", "theme"]
 }

@@ -86,40 +86,6 @@ function parseRGB(raw) {
   throw new Error(`'${raw}' are not integers 0..255`);
 }
 
-const STORAGE_KEY = "themeRGB";
-
-/**
- * Persists the current RGB theme to browser.storage.local.
- *
- * @param {RGB} state
- * @returns {Promise<void>}
- */
-async function saveThemeRGB(state) {
-  try {
-    await browser.storage.local.set({ [STORAGE_KEY]: state });
-  } catch (e) {
-    console.error("saveThemeRGB failed", e);
-    throw e;
-  }
-}
-
-/**
- * Loads the stored RGB theme or falls back on a default.
- *
- * @returns {Promise<RGB>}
- */
-async function loadThemeRGB() {
-  try {
-    const res = await browser.storage.local.get(STORAGE_KEY);
-    const stored = res[STORAGE_KEY];
-    if (stored == null) return FALLBACK_COLOR;
-    return parseRGB(stored);
-  } catch (e) {
-    console.error("loadThemeRGB failed, using fallback", e);
-    return FALLBACK_COLOR;
-  }
-}
-
 let lastAppliedID = /** @type {string|null} */ (null);
 
 /**
@@ -141,12 +107,6 @@ async function buildAndApply(rgb) {
     throw e;
   }
 
-  try {
-    await saveThemeRGB(rgb);
-  } catch (e) {
-    console.warn("saving theme state failed, continuing", e);
-  }
-
   lastAppliedID = id;
 }
 
@@ -156,9 +116,8 @@ async function buildAndApply(rgb) {
  * @returns {Promise<void>}
  */
 async function applyFallback() {
-  const rgb = await loadThemeRGB();
   try {
-    await buildAndApply(rgb);
+    await buildAndApply(FALLBACK_COLOR);
   } catch (e) {
     console.error("applyFallback failed", e);
   }

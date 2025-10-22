@@ -1,6 +1,6 @@
 # Maintainer: VannRR <https://github.com/vannrr>
 pkgname=omarchy-firefox-theme
-pkgver=1.0.1
+pkgver=1.1.0
 pkgrel=1
 pkgdesc="Firefox extension plus native helper that dynamically themes Firefox to your current omarchy theme."
 arch=('x86_64')

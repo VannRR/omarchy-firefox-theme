@@ -1,6 +1,6 @@
 {
     "name": "omarchy_firefox_theme",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "devDependencies": {
         "esbuild": "^0.25.10",
         "web-ext": "^8.10.0"
