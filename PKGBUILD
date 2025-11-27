@@ -37,7 +37,7 @@ build() {
 
 	# Build webextension (install node deps and run build)
 	cd extension || return 1
-	npm ci --no-audit --no-fund
+	npm i --no-audit --no-fund
 	mkdir -p "${srcdir}/extension"
 	npx esbuild src/background.js --bundle --outfile="${srcdir}/extension/background.js" --platform=browser --sourcemap
 	cp 'icon-32.png' 'icon-64.png' 'manifest.json' "${srcdir}/extension"
