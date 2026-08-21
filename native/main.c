@@ -24,7 +24,7 @@
 #define STRING_MAX 256
 #define MSG_MAX 512
 #define INOTIFY_BUF_LEN 4096
-#define CURRENT_PATH_FMT "%s/.config/omarchy/current"
+#define CURRENT_PATH_FMT "%s/.local/state/omarchy/current"
 #define CHROMIUM_THEME_PATH_FMT "%s/theme/chromium.theme"
 #define THEME_DIR "theme"
 

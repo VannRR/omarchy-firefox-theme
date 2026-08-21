@@ -1,7 +1,7 @@
 # omarchy-firefox-theme
 
 Dynamically sync your Firefox (and forks) theme with [Omarchy’s](https://omarchy.org/) current Chromium theme.
-A native helper watches `$HOME/.config/omarchy/current/theme/chromium.theme` and pushes updates to the browser in real time.
+A native helper watches `$HOME/.local/state/omarchy/current/theme/chromium.theme` and pushes updates to the browser in real time.
 
 ## Features
 
